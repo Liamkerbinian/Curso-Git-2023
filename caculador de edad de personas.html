@@ -4,33 +4,62 @@
 <h1> Calculo de edad </h1>
 
 <script> 
+    //pedir el año en el que estamos
+	var anhoactual = prompt ("En que año estamos?");
+
+
 	//pedir los datos de la persona 1
 	var nombre1 = prompt ("tu nombre ");
 	var anhodenacimiento1  = prompt ("cual es tu año de nacimiento?");
-	var anhoactual1 = prompt ("En que año estamos?");
 
-	var edad1 =  anhoactual1 - anhodenacimiento1;
+
+	//pedir los datos de la persona 2
+	var nombre2 = prompt ("tu nombre ");
+	var anhodenacimiento2  = prompt ("cual es tu año de nacimiento?");
+	
+	
+	var edad1 =  anhoactual - anhodenacimiento1;
+	var edad2 =  anhoactual - anhodenacimiento2;
 
 	//imprimir los datos de la persona 1
 	document.write("Nombre: "+ nombre1);
 	document.write("<br>");
 	document.write("Edad: "+ edad1 + "años");
 	document.write("<br>");
-
+	document.write("<br>");
 
 	//pedir los datos de la persona 2
-	var nombre2 = prompt ("tu nombre ");
-	var anhodenacimiento2  = prompt ("cual es tu año de nacimiento?");
-	var anhoactual2 = prompt ("En que año estamos?");
-
-	var edad2 = anhoactual2 - anhodenacimiento2;
-
-	//imprimir los datos de la persona 2
 	document.write("Nombre: "+ nombre2);
 	document.write("<br>");
 	document.write("Edad: "+ edad2 + "años");
 	document.write("<br>");
+	document.write("<br>");
 
+
+	//preguntar si la persona 1 es mayor
+	if(edad1 > edad2  ){
+		document.write("es mayor " + nombre1 + " que " + nombre2);
+		document.write("<br>");
+	}
+	
+
+	//preguntar si la persona 2 es mayor
+	if(edad1 < edad2  ){
+		document.write(" es mayor " + nombre2 + " que " + nombre1);
+		document.write("<br>");
+	}
+
+	
+
+	//Preguntamos si ambas tienen la misma edad
+	if(edad1 == edad2){
+		document.write(" tiene  " +nombre2 + " la misma edad que " + nombre1);
+		document.write("<br>");
+
+	}
+
+
+	
 	
 
 </script>
