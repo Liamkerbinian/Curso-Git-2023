@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset= "utf-8">
+
+<h1>IMC de personas</h1>
+
+<script>
+	//pedimos los datos de la persona
+	var nombre = prompt("Cual es tu nombre?");
+	var peso = prompt("Cual es tu peso?");
+	var altura = prompt("Cuanto mides de altura?");
+
+	var IMC = peso / (altura * altura);
+	document.write(nombre);
+	document.write("<br>");
+	document.write(" tu IMC es " + IMC);
+	document.write("<br>");
+
+	//ponemos una condicion if
+	if(IMC < 18.5){
+		document.write(" tienes delgades extrma ");
+		document.write("<br>");
+
+	}
+
+	if((IMC > 18.5)&&(IMC < 24.9)){
+		document.write(" Tienes peso normal ");
+		document.write("<br>");
+
+
+	}
+
+	if((IMC > 25)&&(IMC < 29,9)){
+		document.write(" tienes sobre peso! ");
+		document.write("<br>");
+	}
+
+	if ((IMC > 30)&&(IMC < 34.9)){
+		document.write(" tienes obesidad!! ");
+		document.write("<br>");
+
+	}
+
+	if(IMC > 35){
+		document.write(" tienes obesidad extrma!!! ");
+		document.write("<br>");
+	}
+
+
+
+	
+</script>
+
+	
